@@ -1,0 +1,36 @@
+// Deps
+@import "~normalize.css/normalize.css";
+@import "~tether-shepherd/dist/css/shepherd-theme-arrows.css";
+// Custom
+@import "variables";
+@import "helpers";
+@import "comp/btn";
+@import "comp/fab";
+@import "comp/form";
+@import "comp/steps-counter";
+@import "comp/tour-tooltip";
+@import "comp/tour";
+@import "comp/navbar";
+
+body {
+  background-color: $grey-light;
+  font-family: 'Roboto', sans-serif;
+}
+
+.c-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  .c-tour-container {
+    order: -1;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding: $p4;
+    flex-direction: row;
+  }
+
+
+}

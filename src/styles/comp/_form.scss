@@ -1,0 +1,101 @@
+.c-form {
+  input, textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: $p1;
+    border-radius: 2px;
+    border: 1px solid $grey-middle;
+    background: 10px 10px no-repeat;
+    margin-bottom: $p2;
+    font-size: 14px;
+    transition: .3s;
+
+    &:focus {
+      transition: .3s;
+      border: 1px solid $brand;
+      box-shadow: inset 0 0 0 1px $brand;
+      outline: none;
+    }
+  }
+  select {
+    padding: 20px;
+    width: 100%;
+    margin: 0;
+    height: 42px;
+    color: $grey-middle;
+    border: none;
+  }
+  textarea {
+    line-height: 14 * 1.6px;
+    min-height: $p1 * 10;
+  }
+}
+.c-form-label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 13px;
+  color: $text-middle;
+}
+.c-form-row {
+  display: flex;
+  flex-direction: row;
+}
+.c-form-field {
+  position: relative;
+  flex: 1;
+  width: 100%;
+}
+.c-form-hint {
+  color: $brand-info;
+  font-weight: 300;
+  font-size: 13px;
+  font-style: italic;
+}
+.c-form-icon {
+  position: absolute;
+  bottom: 35px;
+  right: 13px;
+  font-size: 15px;
+  color: $grey-middle;
+
+  img {
+    width: $p1;
+    height: $p1;
+    margin-right: 2px;
+  }
+
+}
+.c-select {
+  border: 1px solid $grey-middle;
+  border-radius: 2px;
+}
+.c-form-file {
+  position: relative;
+  border: 1px dashed $grey-middle;
+  background-color: lighten($grey-light, 2%);
+  padding: $p1;
+  font-size: 13px;
+  color: $grey-middle;
+  text-align: center;
+  transition: .3s;
+  margin-bottom: $p2;
+
+  input {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+
+}
+.c-form-preview {
+  width: 100%;
+  display: none;
+  opacity: 0;
+  margin-top: $p1;
+  transition: .3s;
+}

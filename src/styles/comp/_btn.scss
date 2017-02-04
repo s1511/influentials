@@ -1,0 +1,48 @@
+.c-btn {
+  padding: 13px 21px;
+  border: none;
+  border-radius: 2px;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+  transition: .3s;
+  color: $text-middle;
+
+  &:focus,
+  &:hover {
+    background-color: darken($grey-light, 1%);
+    color: darken($text-middle, 15%);
+  }
+
+  &:active {
+    transition: .3s;
+  }
+}
+.c-btn.btn-raised {
+  @extend .c-btn;
+  background-color: $brand;
+  color: white;
+  box-shadow: 0 0 $shadow-light;
+
+  &:hover,
+  &:focus {
+    background-color: darken($brand, 15%);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 2px 2px $shadow-mid;
+  }
+
+  &:active {
+    background-color: darken($brand, 25%);
+  }
+
+}
+.c-btn.flat-btn {
+  background-color: $grey-light;
+
+  &:focus,
+  &:hover {
+    background-color: darken($grey-light, 15%);
+  }
+}

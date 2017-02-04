@@ -1,0 +1,65 @@
+.c-tour-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 570px;
+  box-shadow: 0 0 $shadow-light;
+  background-color: #fff;
+
+  @media screen and (min-width: $tablet) {
+    margin: 80px auto;
+  }
+
+}
+.c-tour-header {
+  display: flex;
+  flex-direction: row;
+  padding: $p3 $p2;
+
+  .c-tour-description {
+    width: 85%;
+  }
+
+  .c-steps-counter {
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: $mobile) {
+    padding: $p3 $p4;
+  }
+
+}
+.c-tour-content {
+  padding: $p3 $p2;
+  box-shadow: 0px -8px $shadow-light;
+
+  .network {
+    max-width: 100%;
+    transition: .4s;
+    filter: blur(1px);
+  }
+
+  @media screen and (min-width: $mobile) {
+    padding: $p3 $p4;
+  }
+}
+.c-tour-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 0 $p2 $p3 $p2;
+
+  .c-btn:not(:last-child) {
+    margin-right: $p2;
+  }
+  // first-child to bump up specificity
+  .c-tour-back:first-child {
+    margin-right: auto;
+    color: $grey-middle;
+  }
+
+  @media screen and (min-width: $mobile) {
+    margin: 0 $p4 $p3 $p4;
+  }
+
+}

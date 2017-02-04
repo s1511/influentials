@@ -1,0 +1,11 @@
+.c-fab {
+  margin: $p1;
+  width: $p4;
+  height: $p4;
+  color: white;
+  background-color: darken($brand, 25%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}

@@ -1,0 +1,57 @@
+// Hide non-active tooltip
+.c-tour-tooltip {
+  visibility: hidden;
+}
+// Styles for active tours
+.shepherd-active {
+  // Step non-targets
+  .c-content-container > *,
+  .c-tour-container > *,
+  .c-navbar-container > * {
+    transition: .3s;
+    pointer-events: none;
+    filter: blur(3px) grayscale(100%);
+  }
+  // Step target
+  .shepherd-target.shepherd-enabled {
+    transition: .3s;
+    opacity: 1;
+    pointer-events: auto;
+    position: relative;
+    filter: blur(0px);
+    //box-shadow: inset 0 0 0 2px red;
+    //transform: scale(1.3);
+  }
+  // Show current step
+  .c-tour-tooltip.shepherd-open {
+    visibility: visible;
+    max-width: 377px;
+  }
+  .shepherd-content {
+    border: 1px solid $grey-light;
+  }
+  // Style current step + bump up specificity
+  .shepherd-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  .shepherd-title {
+    //@extend .h-heading;
+    font-size: 14px;
+  }
+  .shepherd-element.shepherd-theme-arrows .shepherd-content .shepherd-text p {
+    @extend .h-paragraph;
+  }
+  .shepherd-element.shepherd-theme-arrows .shepherd-content .shepherd-buttons li:first-child .shepherd-button {
+    @extend .c-btn;
+    @extend .flat-btn;
+  }
+  .shepherd-element.shepherd-theme-arrows .shepherd-content .shepherd-buttons li:last-child .shepherd-button {
+    @extend .c-btn;
+    @extend .btn-raised;
+  }
+}
+
+
+
+

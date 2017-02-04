@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Influentials onboarding - step three</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body data-onboarding-step="3" class="fade-in">
+<div class="wrapper">
+    <div class="c-navbar hidden-navbar">
+        <div class="c-navbar-container">
+            <div class="js-mobilenav hide-tablet">
+                <i class="material-icons">menu</i>
+            </div>
+            <a href="/">
+                <img class="c-navbar-logo" src="src/assets/images/logo.png" alt="Influentials logo">
+            </a>
+            <a href="" class="c-btn show-tablet js-network">Network</a>
+            <a href="" class="c-btn show-tablet js-conversations">Conversations</a>
+            <a href="" class="c-btn show-tablet js-campaign">Campaign</a>
+            <div class="c-navbar-user js-user">
+                <i class="material-icons">person</i>
+            </div>
+        </div>
+    </div>
+    <div class="c-tour-container">
+        <div class="c-tour-header">
+            <div class="c-tour-description">
+                <h1 class="h-heading">Present brand</h1>
+                <p class="h-paragraph">When you campaign, your brand is an author. This is why you need a credible brand
+                    profile.</p>
+            </div>
+            <div class="c-steps-counter">
+                <i class="material-icons c-steps-complete">check</i>
+                <span class="c-steps-value">3/5</span>
+            </div>
+        </div>
+        <div class="c-tour-content">
+            <form id="brand-info" action="javascript:console.log('submitting user info')" class="c-form">
+                <div class="c-form-field">
+                    <label for="brand-name" class="c-form-label">Brand name:</label>
+                    <input type="text" id="brand-name" placeholder="Silver" autofocus required/>
+                </div>
+                <div class="c-form-field">
+                    <label for="brand-logo" class="c-form-label">Brand logo</label>
+                    <div class="c-form-file">
+                        <span>Drag and drop or click</span>
+                        <input type="file" id="brand-logo"/>
+                        <img src="" class="c-form-preview" alt="Brand logo preview"/>
+                    </div>
+                </div>
+                <div class="c-form-field">
+                    <label for="brand-desc" class="c-form-label">Brand description</label>
+                    <textarea form="brand-info" id="brand-desc"
+                              placeholder="Ever left a nail salon with more than you bargained for – an infection? Some nail salons are havens for bacteria and germs, and a small cuticle cut can cause a serious fungal infection."></textarea>
+                </div>
+                <div class="c-form-row">
+                    <div class="c-form-field">
+                        <label for="brand-city" class="c-form-label">City:</label>
+                        <input type="text" id="brand-city" placeholder="Wendymouth" autofocus/>
+                    </div>
+                    <div class="l-spacer"></div>
+                    <div class="c-form-field">
+                        <label for="brand-country" class="c-form-label">Country</label>
+                        <div class="c-select">
+                            <select id="brand-country" selected="Gambia">
+                                <option value="gambia">Gambia</option>
+                                <option value="netherlands">Netherlands</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-form-field">
+                    <label for="brand-website" class="c-form-label">Social links:</label>
+                    <input type="text" id="brand-website" placeholder="https://brand.com"/>
+                    <i class="material-icons c-form-icon">public</i>
+                </div>
+                <div class="c-form-field">
+                    <input type="text" id="brand-website" placeholder="https://facebook.cim/brand"/>
+                    <i class="c-form-icon"><img src="src/assets/icons/facebook.svg" alt="facebook icon"></i>
+                </div>
+                <div class="c-form-field">
+                    <input type="text" id="brand-website" placeholder="https://twitter.com/brand"/>
+                    <i class="c-form-icon"><img src="src/assets/icons/twitter.svg" alt="twitter icon"></i>
+                </div>
+                <div class="c-form-field">
+                    <input type="text" id="brand-website" placeholder="https://instagram.com/brand"/>
+                    <i class="c-form-icon"><img src="src/assets/icons/instagram.svg" alt="instagram icon"></i>
+                </div>
+            </form>
+        </div>
+        <div class="c-tour-actions">
+            <a class="c-btn c-tour-back" href="/step-two.html">Back</a>
+            <a class="c-btn flat-btn js-skip-step" href="/step-four.html">Skip</a>
+            <a class="c-btn btn-raised js-submit" href="/step-four.html">Next step</a>
+        </div>
+    </div>
+</div>
+<script src="dist/bundle.js"></script>
+</body>
+</html>

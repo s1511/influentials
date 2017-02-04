@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Influentials onboarding - step two</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body data-onboarding-step="2" class="fade-in">
+<div class="wrapper">
+    <div class="c-navbar hidden-navbar">
+        <div class="c-navbar-container">
+            <div class="js-mobilenav hide-tablet">
+                <i class="material-icons">menu</i>
+            </div>
+            <a href="/">
+                <img class="c-navbar-logo" src="src/assets/images/logo.png" alt="Influentials logo">
+            </a>
+            <a href="" class="c-btn show-tablet js-network">Network</a>
+            <a href="" class="c-btn show-tablet js-conversations">Conversations</a>
+            <a href="" class="c-btn show-tablet js-campaign">Campaign</a>
+            <div class="c-navbar-user js-user">
+                <i class="material-icons">person</i>
+            </div>
+        </div>
+    </div>
+    <div class="c-tour-container">
+        <div class="c-tour-header">
+            <div class="c-tour-description">
+                <h1 class="h-heading">User info</h1>
+                <p class="h-paragraph">Fill in user information to let influencers know who you are in
+                    conversations.</p>
+            </div>
+            <div class="c-steps-counter">
+                <i class="material-icons c-steps-complete">check</i>
+                <span class="c-steps-value">2/5</span>
+            </div>
+        </div>
+        <div class="c-tour-content">
+            <form id="user-info" class="c-form">
+                <div class="c-form-row">
+                    <div class="c-form-field">
+                        <label for="user-name" class="c-form-label">First name:</label>
+                        <input type="text" id="user-name" placeholder="Bruce" autofocus required/>
+                    </div>
+                    <div class="l-spacer"></div>
+                    <div class="c-form-field">
+                        <label for="user-surname" class="c-form-label">Last name:</label>
+                        <input type="text" id="user-surname" placeholder="Copeland" required/>
+                    </div>
+                </div>
+                <div class="c-form-field">
+                    <label for="user-number" class="c-form-label">
+                        Phone number: <span class="h-color-info">&nbsp;*</span>
+                    </label>
+                    <input type="tel" id="user-number" placeholder="434-478-6124" required/>
+                    <i class="material-icons c-form-icon">phone</i>
+                </div>
+                <div class="c-form-field">
+                    <label for="user-email" class="c-form-label">
+                        Email address: <span class="h-color-info">&nbsp;*</span>
+                    </label>
+                    <input type="email" class="input-email" id="user-email" placeholder="bruce_copelnd@yahoo.com"
+                           required/>
+                    <i class="material-icons c-form-icon">email</i>
+                </div>
+                <span class="c-form-hint">* weill be shared only with your colleagues</span>
+            </form>
+        </div>
+        <div class="c-tour-actions">
+            <a class="c-btn flat-btn js-skip-step" href="/step-three.html">Skip</a>
+            <a class="c-btn btn-raised js-submit" href="/step-three.html">Next step</a>
+        </div>
+    </div>
+</div>
+<script src="dist/bundle.js"></script>
+</body>
+</html>
